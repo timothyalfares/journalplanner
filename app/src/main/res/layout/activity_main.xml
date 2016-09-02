@@ -3,14 +3,80 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="journalplanner.journalplanner.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
+    tools:context="journalplanner.journalplanner.MainActivity"
+    android:background="@drawable/b6">
+
+    <Button
+        android:layout_width="1100px"
+        android:layout_height="155px"
+        android:text="Login"
+        android:textColor="#FFFFFF"
+        android:background="#4D7CF2"
+        android:id="@+id/button"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180px"/>
+
+    <EditText
+        android:layout_width="1000px"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:inputType="textPersonName"
+        android:hint="Student ID"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_marginBottom="30px"
+        android:textColorHint="#FFFFFF"
+        android:layout_above="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        />
+
+    <View
+        android:id="@+id/UnderLine"
+        android:layout_width="320dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/editText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="3dp"
+        android:background="#ffffff"
+        />
+
+    <View
+        android:id="@+id/UnderLine2"
+        android:layout_width="320dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="#ffffff"
+        android:paddingTop="20px"
+        android:paddingBottom="20px"
+        />
+
+    <EditText
+        android:layout_width="1000px"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:ems="10"
+        android:textColorHint="#FFFFFF"
+        android:id="@+id/editText2"
+        android:paddingTop="70px"
+        android:layout_above="@+id/button"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText"
+        android:background="@null"/>
+
+    <EditText
+        android:layout_width="1000px"
+        android:layout_height="1800px"
+        android:id="@+id/editText3"
+        android:background="#26FFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
 </RelativeLayout>
