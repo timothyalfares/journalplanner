@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent">
 
@@ -97,14 +102,6 @@
         android:textSize="18dp"
         android:textStyle="bold"/>
 
-    <ScrollView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/scrollView"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -167,6 +164,66 @@
         android:paddingBottom="5dp"
         android:paddingLeft="5dp"/>
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/eventBackground2"
+        android:background="@drawable/back"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2"
+        android:layout_alignBottom="@+id/location2"
+        android:layout_alignRight="@+id/imageView2"
+        android:layout_alignEnd="@+id/imageView2" />
+
+    <ImageView
+        android:layout_width="340dp"
+        android:layout_height="130dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/eventimage2"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/eventBackground1"
+        android:layout_alignLeft="@+id/eventBackground1"
+        android:layout_alignStart="@+id/eventBackground1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LinkedIn Lab"
+        android:id="@+id/eventTitle2"
+        android:textSize="19dp"
+        android:textStyle="bold"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignLeft="@+id/imageView2"
+        android:layout_alignStart="@+id/imageView2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12 Sep 2016"
+        android:id="@+id/date2"
+        android:textSize="15dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/eventTitle2"
+        android:layout_alignLeft="@+id/eventTitle2"
+        android:layout_alignStart="@+id/eventTitle2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="UTS Library"
+        android:id="@+id/location2"
+        android:textSize="15dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:layout_below="@+id/date2"
+        android:layout_alignLeft="@+id/date2"
+        android:layout_alignStart="@+id/date2" />
 
 
 </RelativeLayout>
+</ScrollView>
